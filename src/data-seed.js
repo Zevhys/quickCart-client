@@ -122,4 +122,4 @@ export const products = [
   },
 ];
 
-export const cartItems = [products[0], products[2], products[3]];
+export const cartItems = [products[0], products[1], products[2]];
