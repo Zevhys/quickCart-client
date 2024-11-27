@@ -6,16 +6,8 @@
       </div>
       <div id="product-details">
         <h2>{{ product.name }}</h2>
-        <h3 id="price">
-          Rp
-          {{
-            product.price.toLocaleString("id-ID", {
-              style: "currency",
-              currency: "IDR",
-            })
-          }}
-        </h3>
-        <p class="rate">Average Rating: {{ product.averageRating }}</p>
+        <h3 id="price">Rp{{ product.price }}</h3>
+        <p class="rate">Average Rating : {{ product.averageRating }}</p>
         <button id="add-to-cart">Add to Cart</button>
         <p class="desc">{{ product.description }}</p>
       </div>
@@ -39,10 +31,6 @@ export default {
         return p.id === this.$route.params.id;
       });
     },
-  },
-
-  mounted() {
-    console.log(this.product);
   },
 };
 </script>
