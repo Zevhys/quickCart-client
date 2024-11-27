@@ -8,24 +8,32 @@ const routes = [
     path: "/",
     name: "home",
     component: ProductList,
+    meta: { title: "Home" },
   },
 
   {
     path: "/product/:id",
     name: "product-detail",
     component: ProductDetail,
+    meta: { title: "Product Detail" },
   },
 
   {
     path: "/cart",
     name: "cart",
     component: CartOverview,
+    meta: { title: "Shopping Cart" },
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title;
+  next();
 });
 
 export default router;
