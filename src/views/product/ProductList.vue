@@ -4,7 +4,7 @@
       <div class="grid-wrap">
         <div v-for="product in products" :key="product.id" class="product-item">
           <img :src="product.imageUrl" :alt="`Image of ${product.name}`" />
-          <h3 class="product.name">{{ product.name }}</h3>
+          <h3 class="product-name">{{ product.name }}</h3>
           <p class="product-price">Rp{{ product.price }}</p>
           <router-link
             :to="{ name: 'product-detail', params: { id: product.id } }"
@@ -40,7 +40,7 @@ export default {
 .product-item {
   align-items: center;
   border-radius: 8px;
-  box-shadow: 0px 2px 5px #888;
+  box-shadow: 0 2px 5px #888;
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -67,7 +67,7 @@ button {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .grid-wrap {
     justify-content: center;
   }
