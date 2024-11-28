@@ -1,19 +1,29 @@
 <template>
-  <nav>
-    <router-link :to="{ name: 'home' }">Home</router-link>
-    <router-link :to="{ name: 'product-detail', params: { id: 123 } }">
-      Product Detail
-    </router-link>
-    <router-link :to="{ name: 'cart' }">Cart</router-link>
-  </nav>
-  <router-view />
+  <div id="app">
+    <NavbarView />
+    <router-view />
+    <FooterView />
+  </div>
 </template>
+
+<script>
+import NavbarView from "./components/NavbarView.vue";
+import FooterView from "./components/FooterView.vue";
+
+export default {
+  components: {
+    NavbarView,
+    FooterView,
+  },
+};
+</script>
 
 <style>
 * {
   color-scheme: dark;
   box-sizing: border-box;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 #page-wrap {
