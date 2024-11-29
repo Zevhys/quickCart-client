@@ -3,7 +3,11 @@
     <div id="page-wrap">
       <div class="grid-wrap">
         <div v-for="product in products" :key="product.id" class="product-item">
-          <img :src="product.imageUrl" :alt="`Image of ${product.name}`" />
+          <img
+            :src="product.imageUrl"
+            :alt="`Image of ${product.name}`"
+            loading="lazy"
+          />
           <h3 class="product-name">{{ product.name }}</h3>
           <p class="product-price">Rp{{ product.price }}</p>
           <router-link
@@ -43,10 +47,10 @@ export default {
   box-shadow: 0 2px 5px #888;
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 0.8em;
   padding: 20px;
   position: relative;
-  flex: 1 0 auto;
+  top: 5em;
 }
 
 .product-name {
