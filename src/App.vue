@@ -29,7 +29,7 @@ export default {
 #page-wrap {
   margin: auto;
   max-width: 800px;
-  min-height: 100vh;
+  min-height: 300vh;
 }
 
 button {

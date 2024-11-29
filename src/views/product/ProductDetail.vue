@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="page-wrap">
+    <div id="page-wrap" v-if="product">
       <div id="img-wrap">
         <img :src="product.imageUrl" :alt="`Image of ${product.name}`" />
       </div>
@@ -12,13 +12,19 @@
         <p class="desc">{{ product.description }}</p>
       </div>
     </div>
+    <Notfound v-else />
   </div>
 </template>
 
 <script>
 import { products } from "../../data-seed";
+import Notfound from "../errors/NotFound.vue";
 
 export default {
+  components: {
+    Notfound,
+  },
+
   data() {
     return {
       products,
