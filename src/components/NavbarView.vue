@@ -11,19 +11,22 @@
 
 <style scoped>
 #nav-bar {
-  border-bottom: 1px solid #ddd;
+  top: 0;
+  background-color: #2e665c;
   height: 75px;
   width: 100%;
+  position: fixed;
+  z-index: 9999;
 }
 
 #products-link {
   text-align: center;
   display: block;
-  color: #41b883;
+  color: #6cc9ae;
   font-size: 22px;
-  left: 32px;
+  left: 10px;
+  top: 10px;
   position: absolute;
-  top: 16px;
 }
 
 #products-link h1 {
@@ -32,7 +35,8 @@
 
 #cart-link {
   position: absolute;
-  right: 16px;
-  top: 16px;
+  right: 10px;
+  top: 10px;
+  padding: 0;
 }
 </style>
