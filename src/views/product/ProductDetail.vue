@@ -43,7 +43,7 @@ export default {
 
 <style scoped>
 #page-wrap {
-  margin-top: 16px;
+  margin-top: 100px;
   padding: 16px;
   max-width: 600px;
 }
