@@ -2,20 +2,11 @@
   <div>
     <div id="page-wrap">
       <div class="grid-wrap">
-        <div v-for="product in products" :key="product.id" class="product-item">
-          <img
-            :src="product.imageUrl"
-            :alt="`Image of ${product.name}`"
-            loading="lazy"
-          />
-          <h3 class="product-name">{{ product.name }}</h3>
-          <p class="product-price">Rp{{ product.price }}</p>
-          <router-link
-            :to="{ name: 'product-detail', params: { id: product.id } }"
-          >
-            <button>Detail</button>
-          </router-link>
-        </div>
+        <ProductItem
+          v-for="product in products"
+          :key="product.id"
+          :product="product"
+        />
       </div>
     </div>
   </div>
@@ -23,8 +14,13 @@
 
 <script>
 import { products } from "../../data-seed";
+import ProductItem from "../../components/ProdutItem.vue";
 
 export default {
+  components: {
+    ProductItem,
+  },
+
   data() {
     return {
       products,
@@ -39,36 +35,6 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 16px;
-}
-
-.product-item {
-  align-items: center;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px #888;
-  display: flex;
-  flex-direction: column;
-  margin: 0.8em;
-  padding: 20px;
-  position: relative;
-  top: 5em;
-}
-
-.product-name {
-  margin-bottom: 0;
-}
-
-img {
-  height: 200px;
-  width: 200px;
-  border-radius: 5%;
-}
-
-a {
-  width: 100%;
-}
-
-button {
-  width: 100%;
 }
 
 @media (width <= 768px) {
