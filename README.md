@@ -1,4 +1,7 @@
-# quickcart-client [![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/)
+# quickcart-client
+
+[![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/)
+![Dependabot Status](https://img.shields.io/badge/dependabot-active-brightgreen?logo=dependabot)
 
 <div align="center">
 <img src="preview.webp" height="350px"> 
