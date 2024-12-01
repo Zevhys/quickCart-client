@@ -38,9 +38,10 @@ button {
   border-radius: 8px;
   color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   outline: 0;
   padding: 16px;
+  width: 100%;
 }
 </style>

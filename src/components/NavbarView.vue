@@ -23,7 +23,7 @@
   text-align: center;
   display: block;
   color: #6cc9ae;
-  font-size: 22px;
+  font-size: 1.375em;
   left: 10px;
   top: 10px;
   position: absolute;

@@ -70,7 +70,7 @@ img {
 }
 
 .desc {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5;
   color: #e0e0e0;
   text-align: justify;
