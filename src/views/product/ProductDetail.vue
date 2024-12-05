@@ -2,7 +2,10 @@
   <div>
     <div id="page-wrap" v-if="product">
       <div id="img-wrap">
-        <img :src="product.imageUrl" :alt="`Image of ${product.name}`" />
+        <img
+          :src="`http://localhost:8000${product.imageUrl}`"
+          :alt="`Image of ${product.name}`"
+        />
       </div>
       <div id="product-details">
         <h2>{{ product.name }}</h2>
@@ -17,7 +20,7 @@
 </template>
 
 <script>
-import { products } from "../../data-seed";
+import axios from "axios";
 import Notfound from "../errors/NotFound.vue";
 
 export default {
@@ -27,16 +30,16 @@ export default {
 
   data() {
     return {
-      products,
+      product: {},
     };
   },
 
-  computed: {
-    product() {
-      return this.products.find((p) => {
-        return p.id === this.$route.params.id;
-      });
-    },
+  async created() {
+    const code = this.$route.params.id;
+    const result = await axios.get(
+      `http://localhost:8000/api/products/${code}`
+    );
+    this.product = result.data;
   },
 };
 </script>
