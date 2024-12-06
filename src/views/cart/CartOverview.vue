@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { cartItems } from "../../data-seed";
+import axios from "axios";
 import CartView from "../../components/CartView.vue";
 
 export default {
@@ -20,7 +20,7 @@ export default {
 
   data() {
     return {
-      cartItems,
+      cartItems: [],
     };
   },
 
@@ -39,6 +39,19 @@ export default {
         })
         .replace(/\s/g, "");
     },
+  },
+
+  async created() {
+    const result = await axios.get("http://localhost:8000/api/orders/user/1");
+
+    let data = Object.assign(
+      {},
+      ...result.data.map((result) => ({
+        cart_items: result.products,
+      }))
+    );
+
+    this.cartItems = data.cart_items;
   },
 };
 </script>

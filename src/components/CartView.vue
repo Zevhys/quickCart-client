@@ -1,7 +1,7 @@
 <template>
   <div class="product-container">
     <img
-      :src="item.imageUrl"
+      :src="`http://localhost:8000${item.imageUrl}`"
       :alt="`Image of ${item.name}`"
       class="product-image"
     />
