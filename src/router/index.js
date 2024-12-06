@@ -33,9 +33,18 @@ const routes = [
 ];
 
 const router = createRouter({
-  // eslint-disable-next-line
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve(savedPosition);
+        }, 50);
+      });
+    }
+    return { top: 0 };
+  },
 });
 
 router.beforeEach((to, from, next) => {
