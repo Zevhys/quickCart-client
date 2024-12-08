@@ -2,6 +2,7 @@
   <div>
     <div id="page-wrap">
       <div class="line"></div>
+      <h3 v-if="empty" class="empty">Your cart is empty</h3>
       <CartView
         v-for="item in cartItems"
         :key="item.id"
@@ -41,6 +42,7 @@ export default {
         })
         .indexOf(product);
       this.cartItems.splice(indexCart, 1);
+      this.empty = this.cartItems.length === 0;
     },
   },
 
@@ -58,6 +60,10 @@ export default {
           maximumFractionDigits: 0,
         })
         .replace(/\s/g, "");
+    },
+
+    empty() {
+      return this.cartItems.length === 0;
     },
   },
 
@@ -96,5 +102,9 @@ export default {
   width: 90%;
   max-width: 400px;
   padding: 12px;
+}
+
+.empty {
+  text-align: center;
 }
 </style>
