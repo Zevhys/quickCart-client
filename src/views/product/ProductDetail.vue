@@ -46,7 +46,7 @@ export default {
       this.notif = true;
       setTimeout(() => {
         this.notif = false;
-      }, 3000);
+      }, 2000);
     },
   },
 
@@ -103,10 +103,35 @@ img {
 }
 
 .notif {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 20%);
+  animation: slide-in-out 3s forwards;
+  z-index: 9999;
+  max-width: 90%;
+  color: #ecf0f1;
   text-align: center;
-  color: white;
-  background-color: #41b883;
-  padding: 3%;
-  border-radius: 8px;
+}
+
+@keyframes slide-in-out {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
 }
 </style>
