@@ -8,6 +8,8 @@
         :key="item.id"
         :item="item"
         v-on:remove-item="removeFromCart($event)"
+        v-on:increase-quantity="increaseQuantity($event)"
+        v-on:decrease-quantity="decreaseQuantity($event)"
       />
       <h3 id="total-price">Total : {{ totalPrice }}</h3>
       <button id="checkout-button">Checkout</button>
@@ -44,13 +46,28 @@ export default {
       this.cartItems.splice(indexCart, 1);
       this.empty = this.cartItems.length === 0;
     },
+
+    increaseQuantity(productCode) {
+      const item = this.cartItems.find((item) => item.code === productCode);
+      if (item) {
+        item.quantity++;
+      }
+    },
+
+    decreaseQuantity(productCode) {
+      const item = this.cartItems.find((item) => item.code === productCode);
+      if (item && item.quantity > 1) {
+        item.quantity--;
+      }
+    },
   },
 
   computed: {
     totalPrice() {
       return this.cartItems
         .reduce(
-          (sum, item) => sum + parseInt(item.price.replace(/\./g, ""), 10),
+          (sum, item) =>
+            sum + parseInt(item.price.replace(/\./g, ""), 10) * item.quantity,
           0
         )
         .toLocaleString("id-ID", {
@@ -73,7 +90,10 @@ export default {
     let data = Object.assign(
       {},
       ...result.data.map((result) => ({
-        cart_items: result.products,
+        cart_items: result.products.map((product) => ({
+          ...product,
+          quantity: 1,
+        })),
       }))
     );
 
@@ -92,7 +112,7 @@ export default {
 
 #total-price {
   padding: 16px;
-  text-align: right;
+  text-align: center;
   color: #b8860b;
 }
 
