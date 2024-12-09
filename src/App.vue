@@ -40,7 +40,7 @@ button {
   cursor: pointer;
   font-size: 1em;
   font-weight: bold;
-  outline: 0;
+  outline: none;
   padding: 16px;
   width: 100%;
 }
