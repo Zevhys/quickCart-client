@@ -1,0 +1,51 @@
+{
+  "name": "quickcart-client",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Zevhys",
+  "license": "MIT",
+  "description": "simple shopping cart web app",
+  "keywords": [
+    "Client",
+    "Server",
+    "MongoDB",
+    "Express",
+    "Vue.js",
+    "Node.js",
+    "Fullstack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zevhys/quickCart-client"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "core-js": "^3.8.3",
+    "modern-normalize": "^3.0.1",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-vue": "^9.31.0",
+    "globals": "^15.12.0",
+    "postcss-html": "^1.7.0",
+    "stylelint": "^16.10.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
