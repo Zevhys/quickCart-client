@@ -40,4 +40,4 @@ jobs:
             postcss-html
 
       - name: Lint Stylesheets
-        run: npx stylelint "**/*.{css,vue}"
+        run: npx stylelint "**/*.{css,vue,html}"
