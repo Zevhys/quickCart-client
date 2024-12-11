@@ -8,7 +8,7 @@
 
 </br>
 
-Quick Cart is a simple tool that lets you easily turn any product display into a shopping cart.Seamless shopping, right out of the box. Quick Cart is a Vue.js component that makes adding a shopping cart to your app a breeze. Its intuitive interface and flexible customization options.
+Quick Cart is a simple tool that lets you easily turn any product display into a shopping cart. Seamless shopping, right out of the box. Quick Cart is a Vue.js component that makes adding a shopping cart to your app a breeze. Its intuitive interface and flexible customization options.
 
 > [!NOTE]  
 > <b>visit the Quick Cart Server repository, [Here](https://github.com/Zevhys/quickCart-server)</b>
