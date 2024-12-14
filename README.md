@@ -36,5 +36,5 @@ npm install
 
 # Running ESLint & Style
 - npx eslint .
-- npx stylelint "**/*.{css,vue}"
+- npx stylelint "**/*.{css,vue, html}"
 ```
