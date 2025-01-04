@@ -1,7 +1,6 @@
 {
   "name": "quickcart-client",
   "version": "0.1.0",
-  "private": true,
   "author": "Zevhys",
   "license": "MIT",
   "description": "simple shopping cart web app",
