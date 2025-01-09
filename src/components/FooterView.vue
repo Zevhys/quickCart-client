@@ -12,7 +12,7 @@
         </a>
       </b>
 
-      | Copyright &copy; 2024
+      | Copyright &copy; 2024 - 2025
     </p>
   </div>
 </template>
