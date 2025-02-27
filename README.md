@@ -23,7 +23,7 @@ Quick Cart is a simple tool that lets you easily turn any product display into a
 
 # Requirements
 
-```bash
+<pre>
 # Clone Repository
 git clone https://github.com/Zevhys/quickCart-client .
 
@@ -37,4 +37,4 @@ npm install
 # Running ESLint & Style
 - npx eslint .
 - npx stylelint "**/*.{css,vue, html}"
-```
+</pre>
