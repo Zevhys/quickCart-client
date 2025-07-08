@@ -1,6 +1,6 @@
 # quickcart-client
 
-[![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/) [![GitHub license](https://img.shields.io/github/license/Zevhys/quickCart-client)](https://github.com/Zevhys/quickCart-client/blob/main/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/Zevhys/quickCart-client) [![CodeQL](https://github.com/Zevhys/quickCart-client/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/quickCart-client/actions/workflows/codeql.yml) [![Stylelint](https://img.shields.io/github/actions/workflow/status/Zevhys/quickCart-client/stylelint.yml?label=Stylelint&logo=stylelint)](https://github.com/Zevhys/quickCart-client/actions/workflows/stylelint.yml) [![ESLint](https://img.shields.io/github/actions/workflow/status/Zevhys/quickCart-client/eslint.yml?label=ESLint&logo=eslint)](https://github.com/Zevhys/quickCart-client/actions/workflows/eslint.yml) ![Dependabot Status](https://img.shields.io/badge/dependabot-active-brightgreen?logo=dependabot)
+[![Author](http://img.shields.io/badge/author-@Zevhys-blue.svg)](https://www.linkedin.com/in/rakha-djauhari/) [![GitHub license](https://img.shields.io/github/license/Zevhys/quickCart-client)](https://github.com/Zevhys/quickCart-client/blob/main/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/Zevhys/quickCart-client) [![Issues Welcome](https://img.shields.io/badge/issues-welcome-brightgreen.svg)](https://github.com/Zevhys/quickcart-client/issues) [![Pull Requests Welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg)](https://github.com/Zevhys/quickCart-client/pulls) [![CodeQL](https://github.com/Zevhys/quickCart-client/actions/workflows/codeql.yml/badge.svg)](https://github.com/Zevhys/quickCart-client/actions/workflows/codeql.yml) [![Stylelint](https://img.shields.io/github/actions/workflow/status/Zevhys/quickCart-client/stylelint.yml?label=Stylelint&logo=stylelint)](https://github.com/Zevhys/quickCart-client/actions/workflows/stylelint.yml) [![ESLint](https://img.shields.io/github/actions/workflow/status/Zevhys/quickCart-client/eslint.yml?label=ESLint&logo=eslint)](https://github.com/Zevhys/quickCart-client/actions/workflows/eslint.yml) ![Dependabot Status](https://img.shields.io/badge/dependabot-active-brightgreen?logo=dependabot)
 
 <div align="center">
 <img src="preview.webp" height="350px"> 
@@ -8,7 +8,7 @@
 
 </br>
 
-Quick Cart is a simple tool that lets you easily turn any product display into a shopping cart.Seamless shopping, right out of the box. Quick Cart is a Vue.js component that makes adding a shopping cart to your app a breeze. Its intuitive interface and flexible customization options.
+Quick Cart is a simple tool that lets you easily turn any product display into a shopping cart. Seamless shopping, right out of the box. Quick Cart is a Vue.js component that makes adding a shopping cart to your app a breeze. Its intuitive interface and flexible customization options.
 
 > [!NOTE]  
 > <b>visit the Quick Cart Server repository, [Here](https://github.com/Zevhys/quickCart-server)</b>
@@ -23,7 +23,7 @@ Quick Cart is a simple tool that lets you easily turn any product display into a
 
 # Requirements
 
-```bash
+<pre>
 # Clone Repository
 git clone https://github.com/Zevhys/quickCart-client .
 
@@ -36,5 +36,5 @@ npm install
 
 # Running ESLint & Style
 - npx eslint .
-- npx stylelint "**/*.{css,vue}"
-```
+- npx stylelint "**/*.{css,vue, html}"
+</pre>
