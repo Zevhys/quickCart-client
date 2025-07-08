@@ -22,11 +22,11 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "axios": "^1.8.2",
-    "core-js": "^3.8.3",
+    "axios": "^1.10.0",
+    "core-js": "^3.44.0",
     "modern-normalize": "^3.0.1",
-    "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
@@ -34,13 +34,13 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^9.15.0",
-    "eslint-plugin-vue": "^9.31.0",
-    "globals": "^15.12.0",
+    "eslint-plugin-vue": "^10.0.0",
+    "globals": "^16.0.0",
     "postcss": "^8.4.49",
     "postcss-html": "^1.7.0",
     "stylelint": "^16.11.0",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-standard": "^36.0.1"
+    "stylelint-config-standard": "^38.0.0"
   },
   "browserslist": [
     "> 1%",
