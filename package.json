@@ -40,7 +40,7 @@
     "postcss-html": "^1.7.0",
     "stylelint": "^16.11.0",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-standard": "^38.0.0"
+    "stylelint-config-standard": "^39.0.0"
   },
   "browserslist": [
     "> 1%",
