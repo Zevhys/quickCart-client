@@ -38,3 +38,6 @@ npm install
 - npx eslint .
 - npx stylelint "**/*.{css,vue, html}"
 </pre>
+
+# Contribution
+Contributions are welcome! If you have suggestions for improvements or want to report an issue, feel free to open a pull request or create an issue. Thank you for helping to make this project better!
